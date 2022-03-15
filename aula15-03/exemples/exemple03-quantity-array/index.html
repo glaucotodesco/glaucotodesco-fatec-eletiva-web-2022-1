@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/quantity.css" rel="stylesheet" />
+    <title>Exemplo Mask</title>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+        Produto 01
+        <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+        </div>
+
+        Produto 02
+        <div class="quantity buttons_added">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+        </div>
+
+
+        <button onclick="calc()">Mostrar</button>
+        <div id="saida">
+        </div>
+
+    </div>
+    <script src="js/jquery-3.6.0.min.js"> </script>
+    <script src="js/quantity.js"> </script>
+    <script src="js/javascript.js"> </script>
+
+</body>
+
+</html>

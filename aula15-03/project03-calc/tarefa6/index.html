@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Exemplo 03 - Calculadora JavaScript</title>
+</head>
+
+<body>
+   
+    
+    <div class="container">
+        <div class="calc">
+            <div class="calc-title">
+                <object data="assets/calculate_black_48dp.svg" type="image/svg+xml"></object>
+                Calculadora Plus
+            </div>
+            
+            <input id="num1" type="number" placeholder="Digite um número" />
+            <input id="num2" type="number" placeholder="Digite um número" />
+            <div class="operation">
+                <button onclick="calc('+')">+</button>
+                <button onclick="calc('-')">-</button>
+                <button onclick="calc('*')">*</button>
+                <button onclick="calc('/')">/</button>
+            </div>
+            <input id="output" type="text" readonly value="0.0" />
+        </div>
+
+        <div class="history-panel">
+            <div class="history-title">
+                <h1>Histórico:</h1>
+            </div>
+            
+            <div class="history">
+                <small>
+                        10 últimas operações:
+                </small>
+                <div id="history" >
+                    
+                </div>>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
