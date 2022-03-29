@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+
+    <header class="bg-light text-center">
+        <div class="display-4 bg">
+            Cadastro de Produtos
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="display-6 mb-3 mt-3">
+                Formulário de Cadastro:
+            </div>
+
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <form>
+
+                        <div class="row mb-3">
+                            <label for="inputName" class="col-lg-2 col-form-label">Nome:</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="inputDescription" class="col-lg-2 col-form-label">Descrição:</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputDescription">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="inputPrice" class="col-lg-2 col-form-label">Preço:</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" id="inputPrice">
+                            </div>
+
+                            <label for="selectCategoria"
+                                class="col-lg-2 col-form-label mt-md-3 mt-lg-0">Categoria:</label>
+                            <div class="col-lg-4">
+                                <select class="form-select" aria-label="Escolha:" id="selectCategoria">
+                                    <option selected>Escolha:</option>
+                                    <option value="1">Fabricação Própria</option>
+                                    <option value="2">Nacional</option>
+                                    <option value="3">Importado</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="selectCategoria" class="col-lg-2 col-form-label">Opções:</label>
+                            <div class="col-lg-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"  id="checkPromotion">
+                                    <label class="form-check-label" for="checkPromotion">
+                                        Promoção
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"  id="checkNewProduct">
+                                    <label class="form-check-label" for="checkNewProduct">
+                                        Lançamento
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-primary">Cadastrar</button>
+                        </div>
+
+                    </form>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            <div class="display-6">
+                Produtos Cadastrados:
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Preço</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Opções</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Compatador M1-TX</td>
+                                <td>Intel I7, 16GB, SSD 256, HD 1T</td>
+                                <td>4.900,00</td>
+                                <td>Nacional</td>
+                                <td>
+                                    <span class="badge bg-success">P</span>
+                                    <span class="badge bg-primary">L</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Compatador M2-TX</td>
+                                <td>Intel I7, 32GB, SSD 512, HD 1T</td>
+                                <td>5.900,00</td>
+                                <td>Importado</td>
+                                <td>
+                                    <span class="badge bg-primary">L</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Compatador M1-T</td>
+                                <td>Intel I5, 8GB, HD1T</td>
+                                <td>2.900,00</td>
+                                <td>Produção Própria</td>
+                                <td>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-secondary bg-gradient text-white text-center fixed-bottom">
+        <small>@Sistemas P&D</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.6.0.min.js"> </script>
+    <script src="js/jquery.mask.min.js"> </script>
+    <script src="js/masks.js"> </script>
+
+
+</body>
+
+</html>
